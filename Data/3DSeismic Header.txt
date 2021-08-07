@@ -1,0 +1,59 @@
+
+=========Data loading Statistics on 3Dseismic===========
+
+Start time of Trace Headers scan: Oct 3 14:17:30 2011
+Finish time of Trace Headers scan: Oct 3 14:17:30 2011
+Elapsed Time of Trace Headers scan: 
+Number of traces: 9639
+Number of CDPs: 9639.0000
+CDP Range: 1 - 9639
+Offset Range : 0 - 2027
+Amplitude Mean: -0.00478469
+Amplitude Standard Deviation: 1.15838
+Inline Range : 1 - 119
+Xline  Range : 1 - 81
+Inline Increment: 1.0000
+Xline Increment: 1.0000
+Number of Inlines: 119.0000
+Number of Xlines: 81.0000
+Inline spacing (average of references): 30.1015
+Xline spacing (average of references): 29.3769
+Inline Direction from North (average of references): -88.6553
+Xline rotation measured from Inline direction: -90
+Origin of the survey (Center of the bin): (348744.5000, 5644526.0000)
+Number of reference points used: 3
+
+Reference Inline: 1 Xline: 1
+For inline: 1
+Minimum Xline number found was 1 at XY (348744.5000, 5644526.0000)
+Maximum Xline number found was 81 at XY (346361.5000, 5644588.5000)
+Inline direction: -88.4976
+
+For xline: 1
+Minimum Inline number found was 1 at XY (348744.5000, 5644526.0000)
+Maximum Inline number found was 119 at XY (348733.5000, 5648081.5000)
+Xline direction: -0.177261
+
+
+Reference Inline: 60 Xline: 41
+For inline: 60
+Minimum Xline number found was 1 at XY (348791.5000, 5646299.5000)
+Maximum Xline number found was 81 at XY (346405.5000, 5646350.0000)
+Inline direction: -88.7875
+
+For xline: 41
+Minimum Inline number found was 1 at XY (347545.5000, 5644557.5000)
+Maximum Inline number found was 119 at XY (347638.5000, 5648110.0000)
+Xline direction: 1.49959
+
+
+Reference Inline: 119 Xline: 81
+For inline: 119
+Minimum Xline number found was 1 at XY (348733.5000, 5648081.5000)
+Maximum Xline number found was 81 at XY (346454.0000, 5648134.0000)
+Inline direction: -88.6806
+
+For xline: 81
+Minimum Inline number found was 1 at XY (346361.5000, 5644588.5000)
+Maximum Inline number found was 119 at XY (346454.0000, 5648134.0000)
+Xline direction: 1.49447
