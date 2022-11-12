@@ -4,8 +4,8 @@ function [vint_blocked,xout,zout]=makelayeredvint(vint,xin,zin,dg,hor,flag)
 % consistent unit for all input), such the one you get from vrm2vint in the
 % CREWES toolbox.
 %
-% [vint_blocked,xout,zout]=makelayeredvint(vint,xin,zin,hor,flag)
-% [vint_blocked,xout,zout]=makelayeredvint(vint,xin,zin,hor)
+% [vint_blocked,xout,zout]=makelayeredvint(vint,xin,zin,dg,hor,flag)
+% [vint_blocked,xout,zout]=makelayeredvint(vint,xin,zin,dg,hor)
 %
 % vint ... input gridded interval velocity
 % xin ... input spatial axis (in consistent unit)
