@@ -17,7 +17,7 @@ zd=500;
 xoff=80:40:25*40;
 
 figure;subplot(2,1,1);flipy;
-[t,p]=traceray_pp(vp,zp,zsrc,zrec,zd,xoff,10,-1,10,1,1,-gcf);
+[t,p]=traceray_pp(vp,zp,zsrc,zrec,zd,xoff,10,-1,10,1,1,2);
 title(['Constant velocity, P-P mode zsrc=' num2str(zsrc) ' zrec=' num2str(zrec)])
 line(xoff,zrec*ones(size(xoff)),'color','b','linestyle','none','marker','v')
 line(0,zsrc,'color','r','linestyle','none','marker','*')
@@ -47,7 +47,7 @@ f=25;
 %w=sin(2.*pi.*f.*ta); % if you want to convolve with sine wave
 w=ricker(dt,f); % if you want to convolve with ricker wavelet
 for i=1:length(xoff)
-    seis(:,i)=conv(spikes(:,i),w);
+    seis(:,i)=convz(spikes(:,i),w);
 end
 
 %figure;subplot(1,2,1);plotseis(seis(1:length(ta),:),ta,xoff,1,0.5,1,1,'k')
