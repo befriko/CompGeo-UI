@@ -4,7 +4,7 @@
 %
 % 1st Revision: 5 September, 2019
 %               Modify fzero to access extra parameters using anonymous function
-%               instead of conventional parameterization, to be compatible with Octave. 
+%               instead of conventional parameterization, to be compatible with Octave.
 %               https://www.mathworks.com/help/matlab/math/parameterizing-functions.html
 %
 % Befriko Murdianto, October 2011
@@ -30,7 +30,7 @@ disp('Calculating ray parameters...');
 
 % iterate over receivers
 for j = 1:ntrace
-   offset = D(j); 
+   offset = D(j);
    % iterate over interfaces
    for i = 1:nint
       hh = h(1:i);
@@ -39,11 +39,11 @@ for j = 1:ntrace
       x  = min(1./vv) - er;
       p(i,j) = fzero(@(x) fun_ray(x,offset,hh,vv),[-er x]);
       theta(i,j) = (asin(p(i,j)*vv(i)))*180/pi;
-      
+
       % calculate traveltime based on ray parameters
       t(i,j) = 2*sum(hh./(vv.*sqrt(1-p(i,j)^2*vv.^2)));
-      
-   end % iteration over interfaces  
+
+   end % iteration over interfaces
 end % iteration over receivers
 
 % print completion info
