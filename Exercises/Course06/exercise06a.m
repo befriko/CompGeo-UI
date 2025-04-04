@@ -7,6 +7,7 @@
 % University of Indonesia
 
 clear all
+pkg load signal
 
 % Load seismic data
 load ../../Data/matfiles/data2

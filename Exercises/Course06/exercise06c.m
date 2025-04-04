@@ -7,6 +7,8 @@
 
 clear all
 
+pkg load signal
+
 % Load seismic and P-impedance from log data
 load ../../Data/matfiles/data2
 load ../../Data/matfiles/ai
@@ -17,7 +19,7 @@ load ../../Data/matfiles/ai
 % Run inversion trace-by-trace
 imp = zeros(m,n);
 for i = 1:n
-    imp(:,i) = blimp(data2(:,i),ai,ts,6,70);
+    imp(:,i) = blimp(data2(:,i),ai,ts,6,60);
 end
 
 % Display original seismic and P-impedance
