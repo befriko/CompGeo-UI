@@ -12,6 +12,7 @@
 % University of Indonesia
 
 clear all
+pkg load nnet
 
 % Load the target log and the attributes at the well
 load ../../Data/matfiles/sonic % sonic log
@@ -53,5 +54,5 @@ axis tight;axis ij;
 ylabel('Time(s)');legend('Log','NN predicted');
 
 % Measure correlation between predicted and actual log
-xcor=corr(T,Tn);
-figure;plot(T,Tn,'bo',T,T,'r');xlabel('Real Sonic');ylabel('Predicted Sonic');legend('Data','Y=X');axis tight;title(sprintf('Correlation=%f',xcor'));
+xcor=corr(T',Tn');
+figure;plot(T,Tn,'bo',T,T,'r');xlabel('Real Sonic');ylabel('Predicted Sonic');legend('Data','Y=X');axis tight;title(sprintf('Correlation=%f',xcor'));set(gca,"fontsize",12);

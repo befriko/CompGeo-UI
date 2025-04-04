@@ -6,6 +6,8 @@
 % Reservoir Geophysics Graduate Program
 % University of Indonesia
 
+pkg load nnet
+
 % Load the seismic and its attributes
 load ../../Data/matfiles/data  % seismic traces
 load ../../Data/matfiles/iamp  % amplitude envelope
@@ -55,5 +57,5 @@ axis tight;axis ij;
 ylabel('Time(s)');legend('Log','NN predicted');
 
 % Measure correlation between predicted and actual log
-xcor=corr(T2,Tn2);
-figure;plot(T2,Tn2,'bo',T,T,'r');xlabel('Real Sonic');ylabel('Predicted Sonic');legend('Data','Y=X');axis tight;title(sprintf('Correlation=%f',xcor'));
+xcor=corr(T2,Tn2');
+figure;plot(T2,Tn2,'bo',T,T,'r');xlabel('Real Sonic');ylabel('Predicted Sonic');legend('Data','Y=X');axis tight;title(sprintf('Correlation=%f',xcor'));set(gca,"fontsize",12);

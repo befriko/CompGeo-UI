@@ -6,6 +6,8 @@
 % Reservoir Geophysics Graduate Program
 % University of Indonesia
 
+pkg load nnet
+
 % Load the attributes of the seismic
 load ../../Data/matfiles/imp       % P-impedance from log
 load ../../Data/matfiles/iamps     % amplitude envelope
